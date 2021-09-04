@@ -52,8 +52,6 @@ function capNames(array){
 function isCaptialized (minion) {return minion[0] === minion[0].toUpperCase()};
 
 
-const actuallyCapitalizedMinions = capitalizedMinions.filter(element => {
-	if (element[0] === element[0].toUpperCase()) return element;
-})
+const actuallyCapitalizedMinions = capitalizedMinions.filter(isCaptialized);
 console.log(capitalizedMinions);
 console.log(actuallyCapitalizedMinions);
