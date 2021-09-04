@@ -12,6 +12,8 @@ const minions = [
 	'carl'
 ];
 
+
+///MAP///
 // to make the .map change without creating a callable function: 
 const capitalizedMinions =
 minions.map(element =>
@@ -31,3 +33,6 @@ return element[0].toUpperCase() + element.substring(1)
     
 });
 console.log(capatalizedMinions);
+
+
+
