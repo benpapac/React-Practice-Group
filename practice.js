@@ -92,15 +92,14 @@ return datIndex;
 }
 
 /* Now that he's found him, he can just use capitalizedMinions[1] to select kevin and capitalize his name.
-
 Delete the second occurence of 'kevin'.
-
 Once that's done, check again using every whether or not capitalizedMinions is all capitalized correctly */
 
 function capNSliceKevin(array) {
 	let kevinnnnn = uncapitalizedMinion();
 	const kevinCapIndex = targetMinion();
 	array.splice(kevinCapIndex, 1, (kevinnnnn[0].toUpperCase() + kevinnnnn.slice(1)));
+
 	kevinnnnn = uncapitalizedMinion();
 	let kevinDismissalIndex = targetMinion();
 	array.splice(kevinDismissalIndex, 1);
